@@ -201,7 +201,7 @@ export default function Home() {
     {
       title: t('heroTitle1'),
       subtitle: t('heroSubtitle1'),
-      image: "/hero.png",
+      image: "/Hero.png",
       cta: t('shopCollection')
     },
     {
@@ -1321,10 +1321,10 @@ export default function Home() {
               </div>
             </div>
             <div className="aspect-square bg-stone-200 rounded-lg overflow-hidden">
-              <img src="/küche.png" alt="Küche" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" />
+              <img src="/Küche.png" alt="Küche" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" />
             </div>
             <div className="aspect-square bg-stone-200 rounded-lg overflow-hidden">
-              <img src="/bad.png" alt="Bathroom" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" />
+              <img src="/Bad.png" alt="Bathroom" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer" />
             </div>
           </div>
 
