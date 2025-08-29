@@ -1,101 +1,36 @@
-# Modern Living - Furniture E-Commerce Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Ein modernes, vollständig ausgestattetes E-Commerce-Website für Möbel, entwickelt als Demo-Projekt von **PrintzzDigital**.
+## Getting Started
 
-## 🚀 Features
-
-- **Mehrsprachigkeit**: Deutsch/Englisch Sprachschalter
-- **E-Commerce Funktionalität**: Warenkorb, Produktdetails, Wunschliste
-- **Responsive Design**: Optimiert für alle Geräte
-- **Video Integration**: Automatische Thumbnail-Generierung
-- **Testimonials**: Kundenbewertungen mit Profilbildern
-- **Blog-Sektion**: Content-Management
-- **Newsletter**: E-Mail-Subscription
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Next.js 15.5.2 mit Turbopack
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Language**: TypeScript
-- **State Management**: React Hooks
-
-## 🎯 Demo
-
-Diese Website ist eine **Live-Demo** und Showcase der Fähigkeiten von PrintzzDigital im Bereich moderne Webentwicklung.
-
-### Implementierte E-Commerce Features:
-- ✅ Produktkatalog mit Kategorien
-- ✅ Warenkorb-Management
-- ✅ Produktdetail-Modals
-- ✅ Wunschliste-Funktionalität
-- ✅ Responsives Design
-- ✅ Mehrsprachige Unterstützung
-
-## 🚦 Getting Started
+First, run the development server:
 
 ```bash
-# Repository klonen
-git clone https://github.com/lk2693/modernliving.git
-
-# In das Projektverzeichnis wechseln
-cd modernliving/moebel-shop
-
-# Dependencies installieren
-npm install
-
-# Development Server starten
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Öffnen Sie [http://localhost:3000](http://localhost:3000) in Ihrem Browser.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📁 Projektstruktur
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```
-modernliving/
-├── moebel-shop/           # Next.js Hauptanwendung
-│   ├── app/              # App Router (Next.js 13+)
-│   │   ├── layout.tsx    # Root Layout
-│   │   ├── page.tsx      # Homepage
-│   │   └── globals.css   # Globale Styles
-│   ├── public/           # Statische Assets
-│   └── package.json      # Dependencies
-└── package.json          # Workspace Root
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🎨 Design Features
+## Learn More
 
-- **Minimalistisches Design**: Clean und modern
-- **Smooth Animations**: Flüssige Übergänge
-- **Interactive Elements**: Hover-Effekte und Transitions
-- **Professional Typography**: Lesbare und ansprechende Schriften
-- **Color Scheme**: Warme, einladende Farbpalette
+To learn more about Next.js, take a look at the following resources:
 
-## 📱 Responsive Design
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- **Mobile First**: Optimiert für mobile Geräte
-- **Tablet Support**: Angepasste Layouts für Tablets
-- **Desktop**: Vollständige Desktop-Erfahrung
-- **4K Ready**: Hochauflösende Bildschirme unterstützt
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 🌐 PrintzzDigital
+## Deploy on Vercel
 
-Dieses Projekt wurde entwickelt von **PrintzzDigital** - Ihrem Partner für moderne Webentwicklung.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Services:
-- 🚀 **Next.js Entwicklung**
-- 💳 **E-Commerce Lösungen** 
-- 🎨 **UI/UX Design**
-- 📱 **Responsive Webentwicklung**
-- ⚡ **Performance Optimierung**
-
-**Kontakt**: [printzzdigital.com](https://printzzdigital.com)
-
-## 📄 Lizenz
-
-Dieses Projekt dient als Demo und Portfolio-Showcase. Alle Rechte vorbehalten.
-
----
-
-*Entwickelt mit ❤️ von PrintzzDigital*
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
