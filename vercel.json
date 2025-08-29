@@ -1,0 +1,9 @@
+{
+  "name": "modernliving",
+  "version": 2,
+  "buildCommand": "cd moebel-shop && npm ci && npm run build",
+  "outputDirectory": "moebel-shop/.next",
+  "installCommand": "cd moebel-shop && npm ci",
+  "framework": "nextjs",
+  "rootDirectory": "moebel-shop"
+}
