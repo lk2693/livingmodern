@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { 
   Menu, X, ShoppingBag, Heart, Star, ArrowRight, Phone, Mail, MapPin, 
-  Search, User, Filter, Grid, List, ChevronDown, Play, Quote,
+  Search, User, Filter, Grid, List, Play, Quote,
   Truck, Shield, RotateCcw, Award, Facebook, Instagram, Twitter,
   ChevronLeft, ChevronRight, Plus, Minus, Eye, Share2, Globe
 } from 'lucide-react';
@@ -197,7 +197,7 @@ export default function Home() {
 
   const categories = ['all', 'chairs', 'tables', 'storage', 'lighting', 'sofas', 'decor'];
 
-  const getHeroSlides = () => [
+  const getHeroSlides = useCallback(() => [
     {
       title: t('heroTitle1'),
       subtitle: t('heroSubtitle1'),
@@ -216,7 +216,7 @@ export default function Home() {
       image: "/schlafzimmer.png",
       cta: language === 'de' ? 'Handwerkskunst entdecken' : 'Discover Craftsmanship'
     }
-  ];
+  ], [language, t]);
 
   // Product translations
   const getProductName = (productId: number, englishName: string): string => {
@@ -516,7 +516,7 @@ export default function Home() {
       clearInterval(slideInterval);
       clearInterval(testimonialInterval);
     };
-  }, [language, testimonials.length]); // Add language as dependency
+  }, [getHeroSlides, testimonials.length]); // Add getHeroSlides as dependency
 
   return (
     <div className="min-h-screen bg-white">
@@ -1209,7 +1209,7 @@ export default function Home() {
                     </div>
                     <Quote className="w-8 h-8 text-stone-300 mx-auto mb-4" />
                     <p className="text-lg text-stone-700 mb-6 leading-relaxed">
-                      "{testimonial.text}"
+                      &ldquo;{testimonial.text}&rdquo;
                     </p>
                     <div className="text-center">
                       <div className="font-medium text-stone-800 text-lg">{testimonial.name}</div>
